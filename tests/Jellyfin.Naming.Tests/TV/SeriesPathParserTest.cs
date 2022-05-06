@@ -18,6 +18,7 @@ namespace Jellyfin.Naming.Tests.TV
         [InlineData("The Show S01E01 Episode", "The Show")]
         [InlineData("/something/The Show/Season 1", "The Show")]
         [InlineData("/something/The Show/S01", "The Show")]
+        [InlineData("Genius.S02.1080p.AMZN.WEB-DL.DD+5.1.H.264-SiGMA", "Genius")]
         public void SeriesPathParserParseTest(string path, string name)
         {
             var res = SeriesPathParser.Parse(_namingOptions, path);
