@@ -157,7 +157,8 @@ namespace Emby.Naming.Common
                 @"^(?<cleaned>.+?)(\[.*\])",
                 @"^\s*(?<cleaned>.+?)\WE[0-9]+(-|~)E?[0-9]+(\W|$)",
                 @"^\s*\[[^\]]+\](?!\.\w+$)\s*(?<cleaned>.+)",
-                @"^\s*(?<cleaned>.+?)\s+-\s+[0-9]+\s*$"
+                @"^\s*(?<cleaned>.+?)\s+-\s+[0-9]+\s*$",
+                @"^[\u4e00-\u9fa5].*[\u4e00-\u9fa5](?<cleaned>.*)"
             };
 
             SubtitleFileExtensions = new[]

@@ -28,6 +28,7 @@ namespace Jellyfin.Naming.Tests.Video
         [InlineData("[OCN] 애타는 로맨스 720p-NEXT", "애타는 로맨스")]
         [InlineData("[tvN] 혼술남녀.E01-E16.720p-NEXT", "혼술남녀")]
         [InlineData("[tvN] 연애말고 결혼 E01~E16 END HDTV.H264.720p-WITH", "연애말고 결혼")]
+        [InlineData("编辑部的故事.Stories.of.an.Editorial.Board.1080p.WEB-DL.H264.AAC-OurTV", ".Stories.of.an.Editorial.Board")]
         // FIXME: [InlineData("After The Sunset - [0004].mkv", "After The Sunset")]
         public void CleanStringTest_NeedsCleaning_Success(string input, string expectedName)
         {
